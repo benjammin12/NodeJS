@@ -1,7 +1,7 @@
 
 var figlet = require("figlet");
 /* Use figlet for a single text
-figlet.text("Sam Loves Anal!", function(error, data){
+figlet.text("Hello, Ben", function(error, data){
   if(error)
     console.error(error);
   else
