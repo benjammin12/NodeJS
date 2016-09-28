@@ -8,9 +8,8 @@ figlet.text("Hello, Ben", function(error, data){
     console.log(data);
 });
 */
-
+function readFromFile() {
 var fs = require("fs");
-
 fs.readFile("sam.txt", "utf8", function(error, text){ //read a file context and convert to figlet style
   if(error)
     throw error;
@@ -21,3 +20,15 @@ fs.readFile("sam.txt", "utf8", function(error, text){ //read a file context and 
       else console.log(data);
     })
 });
+
+}
+
+function sayHello() {
+  figlet.text("Hello Function", function(error, data){
+    if (error)
+      console.log(error)
+      else
+        console.log(data);
+
+  })
+}
